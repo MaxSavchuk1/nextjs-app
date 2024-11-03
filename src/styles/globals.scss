@@ -1,0 +1,74 @@
+@import "reset";
+@import "variables";
+@import "./fonts/font.css";
+
+html {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+*:not(h1, h2, h3) {
+  font-size: 0.938rem;
+}
+
+.font-s {
+  font-size: 0.813rem;
+}
+
+.font-xs {
+  font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+
+  *:not(h1, h2, h3) {
+    font-size: 1rem;
+  }
+
+  .font-s {
+    font-size: 0.875rem;
+  }
+
+  .font-xs {
+    font-size: 0.813rem;
+  }
+}
+
+// :root {
+//   --background: #ffffff;
+//   --foreground: #171717;
+// }
+
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --background: #0a0a0a;
+//     --foreground: #ededed;
+//   }
+//   html {
+//     color-scheme: dark;
+//   }
+// }
