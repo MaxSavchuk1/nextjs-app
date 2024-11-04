@@ -1,0 +1,98 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  position: relative;
+
+  @media (min-width: $desktop-breakpoint) {
+    padding: 1.5rem 0;
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+
+  img {
+    margin-top: -4px;
+  }
+
+  h4 {
+    margin-left: 4px;
+  }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  @media (min-width: $desktop-breakpoint) {
+    gap: 4rem;
+  }
+}
+
+.desktopLinks {
+  color: $title-color;
+  display: none;
+
+  .link:first-child {
+    color: $first-color;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: flex;
+    gap: 4rem;
+  }
+}
+
+.mobileLinks {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 0;
+  gap: 1.5rem;
+  z-index: 100;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  border-bottom: 1px solid $first-color;
+
+  .closeIcon {
+    position: absolute;
+    top: 1.1rem;
+    right: 1.5rem;
+    cursor: pointer;
+  }
+
+  img {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+
+.gridIcon {
+  color: $title-color;
+  cursor: pointer;
+
+  @media (min-width: $desktop-breakpoint) {
+    display: none;
+  }
+}
+
+[data-theme="dark"] {
+  .link,
+  .gridIcon {
+    color: $title-color-dark !important;
+  }
+}
