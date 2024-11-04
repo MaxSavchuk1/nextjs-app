@@ -10,7 +10,7 @@ export default function GetStarted() {
       <Image src="/images/santa.png" alt="santa" width={500} height={442} />
       <div className={styles.content}>
         <h1>Merry Christmas and Happy New Year!</h1>
-        <p className="font-s">
+        <p className="text-sm">
           Christmas and a new year is about to begin, all good wishes and successes.
         </p>
         <Button text="Get started" height="63px" minWidth="210px" onClick={() => void 0} />

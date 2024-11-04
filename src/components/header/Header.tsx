@@ -12,7 +12,7 @@ export default function Header() {
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   return (
-    <div className={styles.headerContainer}>
+    <header className={styles.headerContainer}>
       <div className={styles.title}>
         <Image src="/images/santa-emoji.png" alt="santa" width={24} height={24} />
         <h4>Christmas</h4>
@@ -52,6 +52,6 @@ export default function Header() {
           </div>
         )}
       </div>
-    </div>
+    </header>
   );
 }
