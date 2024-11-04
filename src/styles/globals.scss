@@ -5,7 +5,11 @@
 html {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+
+  body,
+  .theme-bg {
+    background: $body-color;
+  }
 }
 
 h1 {
@@ -20,8 +24,20 @@ h3 {
   font-size: 1rem;
 }
 
-*:not(h1, h2, h3) {
+h4 {
   font-size: 0.938rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: $title-color;
+}
+
+*:not(h1, h2, h3, h4) {
+  font-size: 0.938rem;
+  color: $text-color;
 }
 
 .font-s {
@@ -32,7 +48,35 @@ h3 {
   font-size: 0.75rem;
 }
 
-@media (min-width: 768px) {
+a {
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 968px;
+  padding: 0 24px;
+}
+
+[data-theme="dark"] {
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $title-color-dark;
+  }
+
+  *:not(h1, h2, h3, h4) {
+    color: $text-color-dark;
+  }
+
+  body,
+  .theme-bg {
+    background: $body-color-dark;
+  }
+}
+
+@media (min-width: $desktop-breakpoint) {
   h1 {
     font-size: 2.25rem;
   }
@@ -56,19 +100,12 @@ h3 {
   .font-xs {
     font-size: 0.813rem;
   }
+
+  .container {
+    padding: 0 50px;
+  }
 }
 
-// :root {
-//   --background: #ffffff;
-//   --foreground: #171717;
-// }
-
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     --background: #0a0a0a;
-//     --foreground: #ededed;
-//   }
-//   html {
-//     color-scheme: dark;
-//   }
-// }
+.animate__slideInDown {
+  --animate-duration: 0.5s;
+}
