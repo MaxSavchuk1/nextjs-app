@@ -1,10 +1,12 @@
-import styles from "@/styles/page.module.scss";
+import Header from "@/components/header/Header";
+import GetStarted from "@/components/sections/get-started/GetStarted";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <div>Home</div>
+    <div className="container">
+      <Header />
+      <main>
+        <GetStarted />
       </main>
     </div>
   );
