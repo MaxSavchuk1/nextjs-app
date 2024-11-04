@@ -1,0 +1,22 @@
+.button {
+  background-color: $first-color;
+  height: 55px;
+  border-radius: 2rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 32px;
+
+  span {
+    color: #ffffff;
+  }
+}
+
+.button.black {
+  background-color: $title-color;
+}
+
+[data-theme="dark"] .button.black {
+  background-color: $first-color;
+}
