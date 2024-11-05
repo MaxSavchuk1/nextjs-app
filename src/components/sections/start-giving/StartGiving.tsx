@@ -8,6 +8,7 @@ export default function StartGiving() {
   return (
     <section className={styles.startGiving}>
       <h2>Start giving this christmas</h2>
+
       <div className={styles.cards}>
         {startGivingCards.map((card, i) => (
           <div key={i} className={styles.card}>

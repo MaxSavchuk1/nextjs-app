@@ -12,3 +12,14 @@ $body-color-dark: #251819;
 $container-color-dark: #2f2223;
 
 $desktop-breakpoint: 768px;
+
+%flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+%flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

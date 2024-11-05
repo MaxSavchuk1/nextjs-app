@@ -1,11 +1,9 @@
 .button {
+  @extend %flex-center;
   background-color: $first-color;
   height: 55px;
   border-radius: 2rem;
   border: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0 32px;
 
   span {
