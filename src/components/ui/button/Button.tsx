@@ -1,3 +1,4 @@
+import classNames from "classnames";
 import styles from "./Button.module.scss";
 
 type Props = {
@@ -23,7 +24,7 @@ export default function Button(props: Props) {
     <button
       type={type}
       style={{ height, minWidth }}
-      className={[styles.button, switchColors && styles.black].filter((el) => el).join(" ")}
+      className={classNames(styles.button, { [styles.black]: switchColors })}
       onClick={onClick}
     >
       <span>{text}</span>

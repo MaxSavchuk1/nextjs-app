@@ -29,7 +29,7 @@
     }
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $md-breakpoint) {
     flex-direction: row;
     text-align: left;
     padding: 52px 0;

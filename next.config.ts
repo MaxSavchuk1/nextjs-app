@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   sassOptions: {
     prependData: `@use 'src/styles/variables' as *;`,
+    silenceDeprecations: ["legacy-js-api"],
   },
 };
 

@@ -11,7 +11,10 @@ $container-color: #ffffff;
 $body-color-dark: #251819;
 $container-color-dark: #2f2223;
 
-$desktop-breakpoint: 768px;
+$xs-breakpoint: 480px;
+$sm-breakpoint: 640px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 1024px;
 
 %flex-column {
   display: flex;

@@ -5,7 +5,7 @@
   padding: 1rem 0;
   position: relative;
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $md-breakpoint) {
     padding: 1.5rem 0;
   }
 }
@@ -28,7 +28,7 @@
   align-items: center;
   gap: 1rem;
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $md-breakpoint) {
     gap: 4rem;
   }
 }
@@ -41,7 +41,7 @@
     color: $first-color;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $md-breakpoint) {
     display: flex;
     gap: 4rem;
   }
@@ -74,7 +74,7 @@
     top: 0;
   }
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $md-breakpoint) {
     display: none;
   }
 }
@@ -83,7 +83,7 @@
   color: $title-color;
   cursor: pointer;
 
-  @media (min-width: $desktop-breakpoint) {
+  @media (min-width: $md-breakpoint) {
     display: none;
   }
 }

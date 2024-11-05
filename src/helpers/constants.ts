@@ -34,3 +34,36 @@ export const startGivingCards = [
     image: "/images/sock.png",
   },
 ];
+
+export const giftsToShare = [
+  {
+    id: 1,
+    title: "Gingerbread",
+    price: 15,
+    image: "/images/gifts/gingerbread.png",
+  },
+  {
+    id: 2,
+    title: "Santa Claus Hat",
+    price: 22,
+    image: "/images/gifts/santa-claus-hat.png",
+  },
+  {
+    id: 3,
+    title: "Candy stick",
+    price: 12,
+    image: "/images/gifts/candy.png",
+  },
+  {
+    id: 4,
+    title: "Christmas tree",
+    price: 48,
+    image: "/images/gifts/christmas-tree.png",
+  },
+  {
+    id: 5,
+    title: "Snowman",
+    price: 35,
+    image: "/images/gifts/snowman.png",
+  },
+];

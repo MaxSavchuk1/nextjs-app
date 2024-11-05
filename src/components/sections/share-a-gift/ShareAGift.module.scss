@@ -1,0 +1,95 @@
+.shareAGift {
+  @extend %flex-column;
+  @extend %flex-center;
+  padding: 48px 0 32px;
+
+  h2 {
+    font-weight: 600;
+    margin-bottom: 48px;
+  }
+
+  .gifts {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+  }
+
+  @media (min-width: $sm-breakpoint) {
+    .gifts {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: $md-breakpoint) {
+    .gifts {
+      gap: 2rem;
+    }
+  }
+
+  @media (min-width: $lg-breakpoint) {
+    h2 {
+      margin-bottom: 64px;
+    }
+
+    .gifts {
+      width: 100%;
+      max-width: 680px;
+      gap: 2.5rem;
+    }
+  }
+}
+
+.gift {
+  @extend %flex-column;
+  gap: 4px;
+  position: relative;
+  padding: 24px 18px 16px;
+  background: $container-color;
+  box-shadow: 0px 4px 24px rgba(48, 29, 30, 0.1);
+  border-radius: 12px;
+
+  h3,
+  p {
+    line-height: 140%;
+  }
+
+  img {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+  }
+
+  .heart {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: $first-color;
+    cursor: pointer;
+  }
+
+  @media (min-width: $lg-breakpoint) {
+    padding: 32px 24px 24px;
+
+    img {
+      max-width: 120px;
+      max-height: 120px;
+    }
+
+    .heart {
+      top: 1.25rem;
+      right: 1.25rem;
+    }
+  }
+}
+
+[data-theme="dark"] {
+  .gift {
+    background: $container-color-dark !important;
+  }
+}
+
+.filled {
+  fill: currentColor;
+}
